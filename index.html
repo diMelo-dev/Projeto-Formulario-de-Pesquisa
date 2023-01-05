@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <title>Página Inicial</title>
+    </head>
+
+    <body>
+
+        <main>
+            <div class="container">
+                <div class="headline">
+                    <h1>Formulário de Contato</h1>
+                    <h2>Preencha o formulário com suas informações e nós entraremos em contato.</h2>
+                </div>
+
+                <form autocomplete="off">
+
+                    <div class="input_formulario">
+                        <div class="row">
+                            <input class="input_item" type="text" name="nome" placeholder="Primeiro Nome"/>
+                            <input  class="input_item" type="text" name="sobrenome" placeholder="Sobrenome" />
+                            
+                            
+                        </div>
+
+                        <div class="row">
+                            <span class="input_item">Com qual sexo você se identifica?</span>
+                            <div class="box_sexos input_item">
+                                <div class="coluna_sexo">
+                                    <input class="input_item" type="radio" id="masculino" name="sexo" value="Masculino" />
+                                    <label for="masculino">Masculino</label>
+                                </div>
+                                <div class="coluna_sexo">
+                                    <input class="input_item" type="radio" id="feminino" name="sexo" value="Feminino" />
+                                    <label for="feminino">Feminino</label>
+                                </div>
+                                <div class="coluna_sexo">
+                                    <input class="input_item" class="input_item" type="radio" id="outro" name="sexo" value="Outro" />
+                                    <label for="outro">Outro</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <input class="input_item" type="email" name="email" placeholder="Seu E-mail" />
+                        </div>
+
+                        <div class="row">
+                            <input class="input_item" type="number" name="ddi" placeholder="+55" />
+                            <input class="input_item" type="number" name="ddd" placeholder="16" />
+                            <input class="input_item" type="number" name="telefone" placeholder="XXXXXXXXX" />
+                        </div>
+
+                        <div class="row">
+                            <textarea class="input_item" name="mensagem" placeholder="Conte-nos um pouco mais sobre as suas dúvidas."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row center">
+                        <input type="submit" name="submit" value="Enviar Formulário" />
+                    </div>
+                </form>
+            </div>
+        </main>
+
+    </body>
+
+</html>
